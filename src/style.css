@@ -1,0 +1,77 @@
+/*inserir reset*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid blue;
+}
+
+.input::placeholder {
+    color: lightgray;
+}
+
+main {
+    max-width: 1058px;
+    width: 100%;
+    height: 900px;
+    margin: 0px auto;
+    background-color: rgba(163, 247, 191, 0.35);
+}
+
+
+/*colocar altura dinâmica: tamanho da janela do usuario*/
+
+#top_area {
+    height: 35px;
+    background-color: #222831;
+    color: white;
+}
+
+.background {
+    height: 150px;
+}
+
+#bg_box1 {
+    background-color: #29A19C;
+}
+
+#bg_box2 {
+    background-color: #A3F7BF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#offset {
+    width: 100px;
+}
+
+#container_cipherArea {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 110px;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_cipherArea_item {
+    width: 48%;
+    text-align: center;
+    outline: none;
+    font-size: 1.4em;
+}
+
+.border_style {
+    border-right: 2px solid lightgray;
+}
+
+footer {
+    background-color: gray;
+}

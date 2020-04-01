@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+</head>
+
+<body>
+    <!-- Cabeçalho-->
+    <header id="top_area">
+    </header>
+
+    <!-- Início do conteúdo-->
+    <main>
+        <!-- box_bg1-->
+        <section class="background" id="bg_box1">
+            <button help_btn>Ajuda</button>
+        </section>
+
+        <!-- box_bg2-->
+        <section class="background" id="bg_box2">
+            <!-- botões-->
+            <form>
+                <input type="text" id="offset" placeholder="deslocamento">
+
+                <input type="submit=" onclick="EncodeWord()">
+                <button onclick="DecodeWord(GetUserWordToEncode(), GetOffset())">
+    Decodificar
+</button>
+
+            </form>
+        </section>
+
+        <!-- Área de Texto-->
+        <section id="container_cipherArea">
+            <div>
+                <!-- box encode-->
+                <input id="encode_box" class="container_cipherArea_item border_style" type="text" placeholder="Texto">
+
+                <!-- box decode-->
+                <input id="decode_box" class="container_cipherArea_item" type="text" placeholder="Código">
+            </div>
+        </section>
+        <!-- //Fim Área de Texto-->
+    </main>
+    <!-- //Fim do conteúdo -->
+    <footer>
+        rodapé
+    </footer>
+    <!-- <script src="index.js" type="module"></script> -->
+    <script src="main.js"></script>
+</body>
+
 </html>
