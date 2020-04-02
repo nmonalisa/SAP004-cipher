@@ -3,11 +3,17 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: 2px solid blue;
+    text-align: center;
 }
 
 .input::placeholder {
     color: lightgray;
+}
+
+input {
+    height: 35px;
+    border-radius: 8px;
+    border: none;
 }
 
 main {
@@ -40,15 +46,30 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 15px;
 }
 
 #offset {
     width: 100px;
+    border: 2px solid lightslategray;
+}
+
+.code_btn {
+    background-color: lightcoral;
+    border: 2px solid darkred
+}
+
+#help_btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 70px;
+    margin-top: 20px;
 }
 
 #container_cipherArea {
     border: 2px solid lightgray;
-    border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 50%;
     height: 150px;
@@ -57,19 +78,24 @@ main {
     top: 110px;
     left: 25%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .container_cipherArea_item {
     width: 48%;
-    text-align: center;
     outline: none;
     font-size: 1.4em;
+    text-align: center;
+    height: 140px;
 }
 
-.border_style {
-    border-right: 2px solid lightgray;
+.border_radius {
+    border-radius: 8px;
+}
+
+.border_right {
+    border-right: 1px solid lightgrey;
 }
 
 footer {

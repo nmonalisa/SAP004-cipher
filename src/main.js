@@ -1,21 +1,6 @@
 //variáveis globais
 const alphabet_length = 26
 const codeASC_first_letter = 65
-let word_user
-let offset
-
-// //Recuperando palavra digitada pelo usuário:
-// function GetUserWordToEncode() {
-//     let word_user = document.getElementById("encode_box").value.toUpperCase();
-//     return word_user;
-// }
-
-// //Recuperando deslocamento:
-// function GetOffset() {
-//     let offset = parseInt(document.getElementById("offset").value);
-//     return offset;
-// }
-
 
 //Codificando a palavra inserida:
 function EncodeWord() {
@@ -32,4 +17,3 @@ function EncodeWord() {
     }
     document.getElementById("decode_box").value = (encrypted_word.join("")).toLowerCase();
 }
-EncodeWord

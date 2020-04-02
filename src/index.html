@@ -16,29 +16,29 @@
     <main>
         <!-- box_bg1-->
         <section class="background" id="bg_box1">
-            <button help_btn>Ajuda</button>
+            <input id="help_btn" type="text" value="Help">
         </section>
 
         <!-- box_bg2-->
         <section class="background" id="bg_box2">
             <!-- botões-->
             <form>
-                <input type="text" id="offset" placeholder="deslocamento">
+                <input type="text" id="offset" placeholder="deslocamento" required>
 
-                <input type="submit=" onclick="EncodeWord()">
-                <button onclick="DecodeWord(GetUserWordToEncode(), GetOffset())">
-    Decodificar
-</button>
+                <input class="code_btn" value="Codificar" onclick="EncodeWord()">
 
+                <input class="code_btn" value="Decodificar" onclick="DecodeWord()">
             </form>
         </section>
 
         <!-- Área de Texto-->
-        <section id="container_cipherArea">
-            <div>
+        <section id="container_cipherArea" class="border_radius">
+            <div class="border_right">
                 <!-- box encode-->
                 <input id="encode_box" class="container_cipherArea_item border_style" type="text" placeholder="Texto">
+            </div>
 
+            <div>
                 <!-- box decode-->
                 <input id="decode_box" class="container_cipherArea_item" type="text" placeholder="Código">
             </div>
