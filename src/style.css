@@ -55,9 +55,18 @@ main {
     border: 2px solid lightslategray;
 }
 
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkred;
+    color: white;
+}
+
 .code_btn {
     background-color: lightcoral;
-    border: 2px solid darkred
+    border: 2px solid darkred;
 }
 
 #help_btn {

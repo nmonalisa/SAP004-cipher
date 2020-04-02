@@ -1,3 +1,6 @@
+//ajustar tamanho da tela quando o documento for redimensionado
+resizeScreen = () => window.resizeTo(window.innerWidth, window.innerHeight)
+
 //variáveis globais
 const alphabet_length = 26
 const codeASC_first_letter = 65
@@ -5,8 +8,16 @@ const codeASC_first_letter = 65
 //Codificando a palavra inserida:
 function EncodeWord() {
     let encrypted_word = new Array();
+
+    //recuperando a palavra digitada
     let word_user = document.getElementById("encode_box").value.toUpperCase()
     let offset = parseInt(document.getElementById("offset").value)
+
+    //teste de validação do campo 'deslocamento'
+    if (isNaN(offset) === true) {
+        return;
+    }
+
     for (let i = 0; i < word_user.length; i++) {
         let codeASC_original = word_user.charCodeAt(i); //recupere o código ASC
         let regular_code = codeASC_original - codeASC_first_letter; //calcule o código no alfabeto 'regular' (A-Z)

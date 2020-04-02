@@ -16,7 +16,7 @@
     <main>
         <!-- box_bg1-->
         <section class="background" id="bg_box1">
-            <input id="help_btn" type="text" value="Help">
+            <input id="help_btn" class="btn" type="text" value="Help" readonly>
         </section>
 
         <!-- box_bg2-->
@@ -25,9 +25,9 @@
             <form>
                 <input type="text" id="offset" placeholder="deslocamento" required>
 
-                <input class="code_btn" value="Codificar" onclick="EncodeWord()">
+                <input class="btn code_btn" value="Codificar" onclick="EncodeWord()" readonly>
 
-                <input class="code_btn" value="Decodificar" onclick="DecodeWord()">
+                <input class="btn code_btn" value="Decodificar" onclick="DecodeWord()" readonly>
             </form>
         </section>
 
