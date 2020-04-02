@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+body {
+    background-color:
+}
+
 .input::placeholder {
     color: lightgray;
 }
@@ -19,9 +23,9 @@ input {
 main {
     max-width: 1058px;
     width: 100%;
-    height: 900px;
+    height: 100%;
     margin: 0px auto;
-    background-color: rgba(163, 247, 191, 0.35);
+    background-color: #FFDCDC
 }
 
 
@@ -50,6 +54,11 @@ main {
     padding-bottom: 15px;
 }
 
+#bg_box3 {
+    background-color: #FFDCDC;
+    height: 900px;
+}
+
 #offset {
     width: 100px;
     border: 2px solid lightslategray;
@@ -57,6 +66,7 @@ main {
 
 .btn {
     cursor: pointer;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -70,19 +80,15 @@ main {
 }
 
 #help_btn {
-    background-color: black;
+    background-color: #2E2E2E;
     color: white;
-    font-weight: bold;
     width: 70px;
     margin-top: 20px;
 }
 
 #container_cipherArea {
-    border: 2px solid lightgray;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 50%;
     height: 150px;
-    background-color: white;
     position: absolute;
     top: 110px;
     left: 25%;
@@ -92,21 +98,25 @@ main {
 }
 
 .container_cipherArea_item {
-    width: 48%;
+    border: 2px solid lightgray;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 50%;
     outline: none;
     font-size: 1.4em;
     text-align: center;
     height: 140px;
-}
-
-.border_radius {
-    border-radius: 8px;
-}
-
-.border_right {
-    border-right: 1px solid lightgrey;
+    width: auto;
 }
 
 footer {
     background-color: gray;
+}
+
+
+/*Design responsivo*/
+
+@media screen (max-width: 900px) {
+    body {
+        background: black
+    }
 }
