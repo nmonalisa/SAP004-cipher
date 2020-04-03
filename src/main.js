@@ -21,7 +21,7 @@ function EncodeWord() {
     for (let i = 0; i < word_user.length; i++) {
         let codeASC_original = word_user.charCodeAt(i); //recupere o código ASC
         let regular_code = codeASC_original - codeASC_first_letter; //calcule o código no alfabeto 'regular' (A-Z)
-        let encrypted_letter_regular_code = parseInt(regular_code + offset) % alphabet_length; //descuba a posição da letra codificada
+        let encrypted_letter_regular_code = (regular_code + offset) % alphabet_length //descubra a posição da letra codificada
         let encrypted_letter_codeASC = encrypted_letter_regular_code + codeASC_first_letter; //retorne para o código ASC
         let encrypted_letter = String.fromCharCode(encrypted_letter_codeASC); //recupere qual caracter possui esse código ASC
         encrypted_word.push(encrypted_letter); //guarde esse caracter
@@ -46,7 +46,14 @@ function DecodeWord() {
     for (let i = 0; i < word_user.length; i++) {
         let codeASC_original = word_user.charCodeAt(i); //recupere o código ASC
         let regular_code = codeASC_original - codeASC_first_letter; //calcule o código no alfabeto 'regular' (A-Z)
-        let decrypted_letter_regular_code = parseInt(regular_code - offset) % alphabet_length; //descuba a posição da letra codificada
+        let decrypted_letter_regular_code = (regular_code - offset) % alphabet_length //descuba a posição da letra codificada
+
+        //tratando posições com valores negativos)
+        if (decrypted_letter_regular_code < 0) {
+            decrypted_letter_regular_code = parseInt(alphabet_length + decrypted_letter_regular_code)
+        }
+
+
         let decrypted_letter_codeASC = decrypted_letter_regular_code + codeASC_first_letter; //retorne para o código ASC
         let decrypted_letter = String.fromCharCode(decrypted_letter_codeASC); //recupere qual caracter possui esse código ASC
         decrypted_word.push(decrypted_letter); //guarde esse caracter
