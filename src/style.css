@@ -6,12 +6,8 @@
     text-align: center;
 }
 
-body {
-    background-color:
-}
-
 .input::placeholder {
-    color: lightgray;
+    color: rgb(124, 107, 107);
 }
 
 input {
@@ -110,13 +106,4 @@ main {
 
 footer {
     background-color: gray;
-}
-
-
-/*Design responsivo*/
-
-@media screen (max-width: 900px) {
-    body {
-        background: black
-    }
 }

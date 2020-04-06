@@ -20,7 +20,7 @@ const cipher = {
             encrypted_word.push(encrypted_letter); //guarde esse caracter
         }
         //output
-        document.getElementById("decode_box").value = (encrypted_word.join("")).toLowerCase();
+        document.getElementById("decode_box").value = (encrypted_word.join("")).toUpperCase();
     },
 
     decode: function(offset, string) {
@@ -49,7 +49,7 @@ const cipher = {
             let decrypted_letter = String.fromCharCode(decrypted_letter_codeASC);
             decrypted_word.push(decrypted_letter);
         }
-        document.getElementById("decode_box").value = (decrypted_word.join("")).toLowerCase();
+        document.getElementById("decode_box").value = (decrypted_word.join("")).toUpperCase();
     }
 }
 export default cipher;
