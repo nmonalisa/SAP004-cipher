@@ -4,11 +4,6 @@ const cipher = {
         const alphabet_length = 26;
         const codeASC_first_letter = 65;
 
-        //Validação do campo deslocamento
-        if (isNaN(offset) === true) {
-            alert("O campo 'deslocamento' está vazio!")
-            return;
-        }
         //Manipulação
         let encrypted_word = new Array();
         for (let i = 0; i < string.length; i++) {
@@ -16,7 +11,7 @@ const cipher = {
             let regular_code = codeASC_original - codeASC_first_letter; //calcule o código no alfabeto 'regular' (A-Z)
             let encrypted_letter_regular_code = (regular_code + offset) % alphabet_length //descubra a posição da letra codificada
             let encrypted_letter_codeASC = encrypted_letter_regular_code + codeASC_first_letter; //retorne para o código ASC
-            let encrypted_letter = String.fromCharCode(encrypted_letter_codeASC); //recupere qual caracter possui esse código ASC
+            let encrypted_letter = String.fromCharCode(encrypted_letter_codeASC).toUpperCase(); //recupere qual caracter possui esse código ASC
             encrypted_word.push(encrypted_letter); //guarde esse caracter
         }
         //output
@@ -46,10 +41,10 @@ const cipher = {
             }
 
             let decrypted_letter_codeASC = decrypted_letter_regular_code + codeASC_first_letter;
-            let decrypted_letter = String.fromCharCode(decrypted_letter_codeASC);
+            let decrypted_letter = (String.fromCharCode(decrypted_letter_codeASC)).toUpperCase();
             decrypted_word.push(decrypted_letter);
         }
-        document.getElementById("decode_box").value = (decrypted_word.join("")).toUpperCase();
+        document.getElementById("decode_box").value = (decrypted_word.join(""));
     }
 }
 export default cipher;
