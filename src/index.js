@@ -1,8 +1,5 @@
  import cipher from './cipher.js';
 
- //  console.log(cipher);
-
-
  //tamanho dinâmico da janela do usuário
  window.resizeTo(window.innerWidth, window.innerHeight);
 
@@ -29,9 +26,23 @@
  //Definir manipuladores de evento
  const StartCoding = () => cipher.encode(GetOffsetUser(), GetWordUser());
 
- const StartDecoding = () =>
-     cipher.decode(GetOffsetUser(), GetWordUser());
+ const StartDecoding = () => cipher.decode(GetOffsetUser(), GetWordUser());
+
+ //Intercambiar palavra entre caixas de texto
+ const ExchangeBox = () => {
+     document.getElementById("encode_box").value = document.getElementById("decode_box").value;
+     document.getElementById("decode_box").value = ""
+ };
+
+ //Reset
+ const EraseBox = () => {
+     document.getElementById("encode_box").value = "";
+     document.getElementById("decode_box").value = "";
+     document.getElementById("offset").value = "";
+ }
 
  //Definir escutadores de evento
  document.getElementById("code").addEventListener("click", StartCoding)
  document.getElementById("decode").addEventListener("click", StartDecoding)
+ document.getElementById("exchange").addEventListener("click", ExchangeBox)
+ document.getElementById("erase").addEventListener("click", EraseBox)
