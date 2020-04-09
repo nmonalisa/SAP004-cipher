@@ -1,0 +1,3 @@
+Ajuda:
+
+Não use caracteres especiais (como ç, ? e #). O campo deslocamento representa o número de letras do alfabeto que foram saltadas para gerar o código de cada letra original. Você pode inserir qualquer número como deslocamento!Use a seta vermelha para mover a mensagem entre as caixas de codificação. E use o botão 'x' para limpar todos os seus registros e iniciar uma nova cifra!Boa sorte!

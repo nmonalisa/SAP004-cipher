@@ -18,36 +18,39 @@
     <main>
         <!-- box_bg1-->
         <section class="background" id="bg_box1">
-            <input id="help_btn" class="btn" type="text" value="Help" readonly>
+            <div class="nuvem_one"></div>
+            <div class="nuvem_two"></div>
+            <div class="nuvem_three"></div>
         </section>
 
         <!-- box_bg2-->
         <section class="background" id="bg_box2">
+            <!-- Área de Texto-->
+            <div id="container_cipherArea">
+                <img id="erase" src="/assets/erase.png">
+                <!-- box encode-->
+                <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Texto">
+
+                <!-- box decode-->
+                <input id="decode_box" class="container_cipherArea_item" type="text " placeholder="Tradução ">
+
+                <img src="/assets/double-arrow2.png" id="exchange">
+            </div>
+            <!-- //Fim Área de Texto-->
+        </section>
+
+        <!-- box_bg3-->
+        <section id="bg_box3">
             <!-- botões-->
-            <form>
+            <form id="form">
                 <input type="text" id="offset" placeholder="deslocamento" required>
 
                 <input id="code" class="btn code_btn" value="Codificar" readonly>
 
                 <input id="decode" class="btn code_btn" value="Decodificar" readonly>
             </form>
+            <img src="/assets/question.png" id="help_btn">
         </section>
-
-        <!-- box_bg3-->
-        <section id="bg_box3">
-        </section>
-        <!-- Área de Texto-->
-        <section id="container_cipherArea">
-            <img id="erase" src="/assets/erase.png">
-            <!-- box encode-->
-            <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Texto">
-
-            <!-- box decode-->
-            <input id="decode_box" class="container_cipherArea_item" type="text " placeholder="Tradução ">
-
-            <img src="/assets/double-arrow2.png" id="exchange">
-        </section>
-        <!-- //Fim Área de Texto-->
     </main>
     <!-- //Fim do conteúdo -->
     <footer>

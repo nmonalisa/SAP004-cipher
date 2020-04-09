@@ -16,29 +16,27 @@ input {
     height: 35px;
     border-radius: 8px;
     border: none;
+    outline: none;
 }
 
 main {
     max-width: 1058px;
     margin: 0px auto;
-    border: 1px solid blue;
 }
-
-
-/*colocar altura dinâmica: tamanho da janela do usuario*/
 
 #top_area {
     height: 35px;
-    background-color: #222831;
+    background-color: mediumblue;
     color: white;
 }
 
 .background {
-    height: 150px;
+    height: 200px;
 }
 
 #bg_box1 {
-    background-color: #29A19C;
+    background: #00ffff url("/assets/bg.jpg") no-repeat center;
+    background-size: contain;
 }
 
 #bg_box2 {
@@ -53,6 +51,10 @@ main {
 #bg_box3 {
     background-color: #FFDCDC;
     height: 900px;
+}
+
+#form {
+    padding-top: 30px;
 }
 
 #offset {
@@ -76,9 +78,7 @@ main {
 }
 
 #help_btn {
-    background-color: #2E2E2E;
-    color: white;
-    width: 70px;
+    width: 50px;
     margin-top: 20px;
 }
 
@@ -87,11 +87,10 @@ main {
     width: 100%;
     height: 150px;
     position: absolute;
-    top: 110px;
+    top: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
-    word-wrap: break-word;
 }
 
 .container_cipherArea_item {
@@ -100,7 +99,6 @@ main {
     text-align: center;
     height: 140px;
     width: 33%;
-    outline: none;
 }
 
 #encode_box {
@@ -119,8 +117,8 @@ main {
 }
 
 #exchange {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     rotate: 45deg;
     transform: rotate(40deg);
 }
@@ -132,6 +130,42 @@ main {
     height: 20px;
 }
 
+.nuvem_one,
+.nuvem_two,
+.nuvem_three {
+    width: 100px;
+    height: 80px;
+    background: url("/assets/nuvens2.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -100px;
+    animation: nuvem 60s infinite;
+}
+
+.nuvem_two {
+    animation: nuvem 60s infinite;
+    animation-delay: 20s;
+}
+
+.nuvem_three {
+    animation: nuvem 60s infinite;
+    animation-delay: 40s;
+}
+
 footer {
     background-color: gray;
+}
+
+
+/*--------------------animation-------------------*/
+
+@keyframes nuvem {
+    from {
+        top: 5px;
+        left: 0px;
+    }
+    to {
+        top: 5px;
+        left: 100%;
+    }
 }
