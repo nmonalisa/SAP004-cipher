@@ -4,41 +4,26 @@
  window.resizeTo(window.innerWidth, window.innerHeight);
 
  //Recuperar e validar inputs do usuário
- const GetWordUser = () => {
-     let string = document.getElementById("encode_box").value.toUpperCase();
-     if (string !== "") {
-         return string;
-     } else {
-         alert("Insira um texto para ser codificado.");
-         throw "String is not defined"
-     }
- };
+ const GetWordUser = () => document.querySelector("#encode_box").value.toUpperCase();
+ const GetOffsetUser = () => parseInt(document.querySelector("#offset").value);
 
- const GetOffsetUser = () => {
-     let offset = parseInt(document.getElementById("offset").value);
-     if (isNaN(offset) !== true) {
-         return offset;
-     } else {
-         alert("O campo 'deslocamento' está vazio.");
-         throw "Offset is not defined"
-     }
- };
  //Definir manipuladores de evento
- const StartCoding = () => cipher.encode(GetOffsetUser(), GetWordUser());
+ const StartCoding = () => document.querySelector("#decode_box").value = cipher.encode(GetOffsetUser(), GetWordUser()).toLowerCase();
 
- const StartDecoding = () => cipher.decode(GetOffsetUser(), GetWordUser());
+
+ const StartDecoding = () => document.querySelector("#decode_box").value = cipher.decode(GetOffsetUser(), GetWordUser()).toLowerCase();
 
  //Intercambiar palavra entre caixas de texto
  const ExchangeBox = () => {
-     document.getElementById("encode_box").value = document.getElementById("decode_box").value;
-     document.getElementById("decode_box").value = ""
+     document.querySelector("#encode_box").value = document.getElementById("decode_box").value;
+     document.querySelector("#decode_box").value = ""
  };
 
  //Reset
  const EraseBox = () => {
-     document.getElementById("encode_box").value = "";
-     document.getElementById("decode_box").value = "";
-     document.getElementById("offset").value = "";
+     document.querySelector("#encode_box").value = "";
+     document.querySelector("#decode_box").value = "";
+     document.querySelector("#offset").value = "";
  }
 
  //Mostrar mensagem de ajuda
@@ -48,9 +33,9 @@
  const CloseHelpMessage = () => document.querySelector("#help_balloon").style.opacity = 0;
 
  //Definir escutadores de evento
- document.getElementById("code").addEventListener("click", StartCoding)
- document.getElementById("decode").addEventListener("click", StartDecoding)
- document.getElementById("exchange").addEventListener("click", ExchangeBox)
- document.getElementById("erase").addEventListener("click", EraseBox)
- document.getElementById("help_btn").addEventListener("click", ShowHelpMessage)
- document.getElementById("close_popUp").addEventListener("click", CloseHelpMessage)
+ document.querySelector("#code").addEventListener("click", StartCoding)
+ document.querySelector("#decode").addEventListener("click", StartDecoding)
+ document.querySelector("#exchange").addEventListener("click", ExchangeBox)
+ document.querySelector("#erase").addEventListener("click", EraseBox)
+ document.querySelector("#help_btn").addEventListener("click", ShowHelpMessage)
+ document.querySelector("#close_popUp").addEventListener("click", CloseHelpMessage)

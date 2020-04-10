@@ -14,14 +14,14 @@
     <header id="top_area">
         <img src="lock.png">
         <span>Cifra de César</span>
-       
+
     </header>
 
     <!-- Início do conteúdo-->
     <main>
         <!-- box_bg1-->
         <section class="background" id="bg_box1">
-                  <div id="help_balloon">
+            <div id="help_balloon">
                 <span id="close_popUp">X</span> Não use caracteres especiais (como ç, ? e #). O deslocamento representa o número de letras do alfabeto que serão saltadas para gerar o código das letra originais. Você pode escolher qualquer valor como chave
                 de deslocamento!Use a seta vermelha se quiser mover a mensagem entre as caixas de texto. Se quiser limpar todos os seus registros e iniciar uma nova cifra, use o botão 'x'.Boa sorte!
                 <div class="triangle_balloon"></div>
@@ -38,7 +38,7 @@
             <div id="container_cipherArea">
                 <img id="erase" src="erase.png">
                 <!-- box encode-->
-                <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Texto">
+                <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Mensagem">
 
                 <!-- box decode-->
                 <input id="decode_box" class="container_cipherArea_item" type="text " placeholder="Tradução ">
@@ -51,7 +51,7 @@
         <!-- botões-->
         <section>
             <form id="form">
-                <input type="text" id="offset" placeholder="deslocamento" required>
+                <input type="number" id="offset" placeholder="deslocamento" required>
 
                 <input id="code" class="btn code_btn" value="Codificar" readonly>
 
@@ -62,7 +62,7 @@
     </main>
     <!-- //Fim do conteúdo -->
     <footer>
-         <img src="laboratoria_logo.png">
+        <img src="laboratoria_logo.png">
         <span>Laboratoria - SAP004 | São Paulo, 2020</span>
     </footer>
     <script src="index.js" type="module"></script>
