@@ -5,7 +5,7 @@
 * [3. Funcionalidades](#3-funcionalidades)
 * [4. Ferramentas utilizadas](#4-ferramentas-utilizadas)
 * [5. Scripts e Arquivos](#5-scripts-e-arquivos)
-* [6. Autora](#6-instalação)
+* [6. Instalação](#6-instalação)
 * [7. Autora](#7-autora)
 * [8. Agradecimentos](#8-agradecimentos)
 
