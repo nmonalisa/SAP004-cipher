@@ -88,7 +88,7 @@ npm test
 ```
 Faça o deploy do projeto para o servidor online (gitpages):
 ```
-npm deply url
+npm deploy url
 ```
 
 ## 7. Autora
