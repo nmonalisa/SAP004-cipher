@@ -41,8 +41,18 @@
      document.getElementById("offset").value = "";
  }
 
+ //Mostrar mensagem de ajuda
+ const ShowHelpMessage = () => document.querySelector("#help_balloon").style.opacity = 1;
+
+ //Fechar mensagem de ajuda
+ const CloseHelpMessage = () => document.querySelector("#help_balloon").style.opacity = 0;
+
+
+
  //Definir escutadores de evento
  document.getElementById("code").addEventListener("click", StartCoding)
  document.getElementById("decode").addEventListener("click", StartDecoding)
  document.getElementById("exchange").addEventListener("click", ExchangeBox)
  document.getElementById("erase").addEventListener("click", EraseBox)
+ document.getElementById("help_btn").addEventListener("click", ShowHelpMessage)
+ document.getElementById("close_popUp").addEventListener("click", CloseHelpMessage)

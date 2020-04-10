@@ -18,6 +18,12 @@
     <main>
         <!-- box_bg1-->
         <section class="background" id="bg_box1">
+            <div id="help_balloon">
+                <span id="close_popUp">X</span> Não use caracteres especiais (como ç, ? e #). O deslocamento representa o número de letras do alfabeto que serão saltadas para gerar o código das letra originais. Você pode escolher qualquer valor como chave
+                de deslocamento!Use a seta vermelha se quiser mover a mensagem entre as caixas de texto. Se quiser limpar todos os seus registros e iniciar uma nova cifra, use o botão 'x'.Boa sorte!
+                <div class="triangle_balloon"></div>
+
+            </div>
             <div class="nuvem_one"></div>
             <div class="nuvem_two"></div>
             <div class="nuvem_three"></div>
@@ -34,14 +40,13 @@
                 <!-- box decode-->
                 <input id="decode_box" class="container_cipherArea_item" type="text " placeholder="Tradução ">
 
-                <img src="/assets/double-arrow2.png" id="exchange">
+                <img src="/assets/double-arrow2.png" id="exchange" class="btn">
             </div>
             <!-- //Fim Área de Texto-->
         </section>
 
-        <!-- box_bg3-->
-        <section id="bg_box3">
-            <!-- botões-->
+        <!-- botões-->
+        <section>
             <form id="form">
                 <input type="text" id="offset" placeholder="deslocamento" required>
 
@@ -49,12 +54,12 @@
 
                 <input id="decode" class="btn code_btn" value="Decodificar" readonly>
             </form>
-            <img src="/assets/question.png" id="help_btn">
+            <img id="help_btn" class="btn" src="/assets/question.png">
         </section>
     </main>
     <!-- //Fim do conteúdo -->
     <footer>
-        rodapé
+        <span>Laboratoria - SAP004 | São Paulo, 2020</span>
     </footer>
     <script src="index.js" type="module"></script>
 
