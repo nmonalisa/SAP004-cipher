@@ -10,7 +10,7 @@
 }
 
 .input::placeholder {
-    color: lightgray);
+    color: lightgray;
 }
 
 input {
@@ -35,7 +35,7 @@ main {
 }
 
 #bg_box1 {
-    background: #00ffff url("/assets/bg.jpg") no-repeat center;
+    background: #00ffff url("bg.jpg") no-repeat center;
     background-size: contain;
 }
 
@@ -172,7 +172,7 @@ main {
 .nuvem_three {
     width: 100px;
     height: 80px;
-    background: url("/assets/nuvens2.png") no-repeat;
+    background: url("nuvens.png") no-repeat;
     background-size: contain;
     left: -100px;
     animation: nuvem 60s infinite;
