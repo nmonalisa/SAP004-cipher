@@ -95,4 +95,8 @@ npm deply url
 Nathalia Monalisa Francisco: nathaliamonalisa@gmail.com
 
 ## 8. Agradecimentos
+<<<<<<< HEAD
 Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica.
+=======
+Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica.
+>>>>>>> 5dde33d87e000bdedc0ca796133b832aa16420d8
