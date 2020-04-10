@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+    <title>Caesar Cipher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Cabeçalho-->
+    <header id="top_area">
+    </header>
+
+    <!-- Início do conteúdo-->
+    <main>
+        <!-- box_bg1-->
+        <section class="background" id="bg_box1">
+            <div id="help_balloon">
+                <span id="close_popUp">X</span> Não use caracteres especiais (como ç, ? e #). O deslocamento representa o número de letras do alfabeto que serão saltadas para gerar o código das letra originais. Você pode escolher qualquer valor como chave
+                de deslocamento!Use a seta vermelha se quiser mover a mensagem entre as caixas de texto. Se quiser limpar todos os seus registros e iniciar uma nova cifra, use o botão 'x'.Boa sorte!
+                <div class="triangle_balloon"></div>
+
+            </div>
+            <div class="nuvem_one"></div>
+            <div class="nuvem_two"></div>
+            <div class="nuvem_three"></div>
+        </section>
+
+        <!-- box_bg2-->
+        <section class="background" id="bg_box2">
+            <!-- Área de Texto-->
+            <div id="container_cipherArea">
+                <img id="erase" src="/assets/erase.png">
+                <!-- box encode-->
+                <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Texto">
+
+                <!-- box decode-->
+                <input id="decode_box" class="container_cipherArea_item" type="text " placeholder="Tradução ">
+
+                <img src="/assets/double-arrow2.png" id="exchange" class="btn">
+            </div>
+            <!-- //Fim Área de Texto-->
+        </section>
+
+        <!-- botões-->
+        <section>
+            <form id="form">
+                <input type="text" id="offset" placeholder="deslocamento" required>
+
+                <input id="code" class="btn code_btn" value="Codificar" readonly>
+
+                <input id="decode" class="btn code_btn" value="Decodificar" readonly>
+            </form>
+            <img id="help_btn" class="btn" src="/assets/question.png">
+        </section>
+    </main>
+    <!-- //Fim do conteúdo -->
+    <footer>
+        <span>Laboratoria - SAP004 | São Paulo, 2020</span>
+    </footer>
+    <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
