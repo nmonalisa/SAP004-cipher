@@ -9,7 +9,7 @@
     outline: none;
 }
 
-.input::placeholder {
+.input:placeholder {
     color: lightgray;
 }
 
@@ -19,15 +19,47 @@ input {
     border: none;
 }
 
+header img {
+    width: 27px;
+    height: 27px;
+    margin-right: 4px;
+}
+
 main {
     margin: auto;
     background-color: #FFDCDC;
 }
 
+footer {
+    height: 25px;
+    background-color: black;
+}
+
+footer span,
+header span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: silver;
+}
+
+footer img {
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#top_area,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #top_area {
     height: 35px;
-    background-color: mediumblue;
-    color: white;
+    background-color: darkblue;
+    border-bottom: 1px solid silver;
 }
 
 .background {
@@ -49,7 +81,11 @@ main {
 }
 
 #form {
-    padding-top: 30px;
+    padding: 10px;
+}
+
+#form input {
+    margin-top: 20px;
 }
 
 #offset {
@@ -67,7 +103,6 @@ main {
     border: 2px solid darkred;
 }
 
-0ol,
 .code_btn:hover {
     background-color: darkred;
     color: white;
@@ -154,10 +189,9 @@ main {
 }
 
 #exchange {
-    width: 50px;
+    width: 40px;
     height: 50px;
-    rotate: 45deg;
-    transform: rotate(40deg);
+    transform: rotate(48deg);
 }
 
 #erase {
@@ -186,18 +220,6 @@ main {
 .nuvem_three {
     animation: nuvem 60s infinite;
     animation-delay: 40s;
-}
-
-footer {
-    color: blanchedalmond;
-    text-align: center;
-    height: 25px;
-    background-color: black;
-}
-
-footer span {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
 }
 
 

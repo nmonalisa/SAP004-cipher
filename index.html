@@ -12,6 +12,9 @@
 <body>
     <!-- Cabeçalho-->
     <header id="top_area">
+        <img src="lock.png">
+        <span>Cifra de César</span>
+
     </header>
 
     <!-- Início do conteúdo-->
@@ -35,7 +38,7 @@
             <div id="container_cipherArea">
                 <img id="erase" src="erase.png">
                 <!-- box encode-->
-                <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Texto">
+                <input id="encode_box" class="container_cipherArea_item" type=" text " placeholder="Mensagem">
 
                 <!-- box decode-->
                 <input id="decode_box" class="container_cipherArea_item" type="text " placeholder="Tradução ">
@@ -48,7 +51,7 @@
         <!-- botões-->
         <section>
             <form id="form">
-                <input type="text" id="offset" placeholder="deslocamento" required>
+                <input type="number" id="offset" placeholder="deslocamento" required>
 
                 <input id="code" class="btn code_btn" value="Codificar" readonly>
 
@@ -59,6 +62,7 @@
     </main>
     <!-- //Fim do conteúdo -->
     <footer>
+        <img src="laboratoria_logo.png">
         <span>Laboratoria - SAP004 | São Paulo, 2020</span>
     </footer>
     <script src="index.js" type="module"></script>
