@@ -11,7 +11,7 @@
 
 
 ## 0.Link do projeto
-Clique [aqui]() para acessar o website.
+Clique [aqui](https://nmonalisa.github.io/SAP004-cipher/) para acessar o website.
 
 
 ## 1. Prefácio
@@ -27,10 +27,10 @@ substituida por outra que se encontra há um número fixo de posições
 
 
 ## 2. Resumo
-O objetivo deste website é fornecer um ambiente de criptografagem de palavras utilizadas como pistas em jogos infantis do tipo Caça-ao-Tesouro. A codificação é baseada no método da cifra de César. A aplicação é voltada para o público infantil e por isso se propõe a ser simples, intuitiva e lúdica. Espera-se que os adultos usem a página para codificar as dicas e pistas que fornecerão às crianças para que elas descubram onde está escondido o tesouro. Ao mesmo tempo, as crianças devem ser capazes de utilizar a página para decodificar as pistas que recebem dos responsáveis. Dessa forma, espero trazer à um jogo clássico e divertido um pouco mais de interatividade e dinamicidade através do uso de recursos virtuais.
+O objetivo do projeto é construir um ambiente de criptografagem para as pistas usadas em jogos infantis do tipo ___Caça ao Tesouro___. A codificação das palavras foi baseada no método da Cifra de César. A aplicação é voltada para o público infantil e por isso se propõe a ser simples, intuitiva e lúdica. Espero que os adultos usem a página para codificar as dicas/pistas que fornecerão às crianças para que elas descubram onde está escondido o tesouro. Ao mesmo tempo, as crianças devem ser capazes de utilizar a página para decodificar as pistas que recebem dos mentores do jogo. Dessa forma, espero trazer a este jogo clássico e divertido um pouco mais de interatividade e dinamicidade através do uso de recursos virtuais.
 
 ## 3. Funcionalidades
-A interface é composta pela área de texto, chave de deslocamento, botões de submissão de texto e um botão de ajuda. Para gerar uma pista codificada você deverá inserir uma palavra ou frase na caixa 'Texto' e decidir quantas casas de deslocamento irá utilizar para criptografar sua pista. Registre esse número na caixa 'deslocamento'. Então use o botão 'Codificar' para gerar o texto criptografado. Para descobrir qual é o texto original, o jogador que recebe o código deve usar o botão 'Decodificar'. Não se esqueça de fornecer a chave de deslocamento original que você usou para codificação junto com a dica, pois a recuperação do texto original só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar. Clique no botão 'Ajuda'se quiser dicas de funcionamento.
+A interface é composta pela área de texto, chave de deslocamento, botões de submissão de texto e um botão de ajuda. Para codificar uma pista você deverá inserir uma palavra ou frase na caixa 'Texto' e decidir quantas casas de deslocamento irá utilizar para criptografar sua pista. Registre esse número na caixa 'deslocamento'. Então use o botão 'Codificar' para gerar o texto criptografado. Para descobrir qual é o texto original, o jogador que recebe o código deve usar o botão 'Decodificar'. Não se esqueça de fornecer a chave de deslocamento original que você usou para codificação junto com a dica, pois a recuperação do texto original só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar. Clique no botão 'Ajuda' se quiser dicas de funcionamento durante o uso do webapp.
 
 ## 4. Ferramentas utilizadas
 * [Node.js](https://nodejs.org/en/) - usado como plataforma de aplicação 
@@ -56,11 +56,20 @@ A interface é composta pela área de texto, chave de deslocamento, botões de s
     └── cipher.spec.js
 ```
 * package.json: contém informações sobre versão, licença e dependências do projeto.
+<<<<<<< HEAD
 * src/assets: contém a imagem do protótipo do projeto (fase de planejamento).
 * src/cipher.js: contém o objeto cipher, que possui dois métodos: __cipher.encode(offset, string)__: usado para codificar o texto, e __cipher.decode(offset, string)__: usado para traduzir a mensagem codificada. _Offset_ é o número de posições que queremos mover para a esquerda no alfabeto e _string_ é a mensagem (texto) que queremos decifrar.
 * src/index.html: arquivo com a marcação HTML e link para os arquivos CSS e JS.
 * src/index.js: importa o objeto cipher.js e implementa as demais funcionalidades.
 * src/style.css: arquivo com a estilização.
+=======
+* src/assets: contém as imagens utilizadas.
+* src/cipher.js: contém o objeto cipher, que possui dois métodos: __cipher.encode(offset, string)__: usado para codificar a mensagem, e __cipher.decode(offset, string)__: usado para traduzir a mensagem codificada (decodificar). _Offset_ é o número de posições mividas para a direita no alfabeto e _string_ é a mensagem que deverá ser cifrada/decifrada.
+* src/index.html: arquivo com a marcação HTML e link para os arquivos CSS e JS.
+* src/index.js: importa o objeto cipher.js e implementa as demais funcionalidades em JS.
+* src/prototype.png: contém o protótipo do projeto (realizado na fase de planejamento).
+* src/style.css: arquivo com a estilização dos elementos HTML.
+>>>>>>> c1c7c562b870d30f1dfbad03293ae8c6ce4a44a8
 * test/cipher.spec.js: configuração dos testes unitários.
 
 ## 6. Instalação
@@ -86,7 +95,11 @@ npm test
 ```
 Faça o deploy do projeto para o servidor online (gitpages):
 ```
+<<<<<<< HEAD
 npm run deploy
+=======
+npm deploy url
+>>>>>>> c1c7c562b870d30f1dfbad03293ae8c6ce4a44a8
 ```
 
 ## 7. Autora
