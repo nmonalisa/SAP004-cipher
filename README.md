@@ -50,18 +50,16 @@ A interface é composta pela área de texto, chave de deslocamento, botões de s
 |   ├── cipher.js
 │   ├── index.html
 │   ├── index.js
-|   |__ prototype.png
 │   └── style.css
 └── test
     ├── .eslintrc
     └── cipher.spec.js
 ```
 * package.json: contém informações sobre versão, licença e dependências do projeto.
-* src/assets: contém as imagens utilizadas.
-* src/cipher.js: contém o objeto cipher, que possui dois métodos: __cipher.encode(offset, string)__: usado para codificar o texto, e __cipher.decode(offset, string)__: usado para traduzir a mensagem codificada. Offset é o número de posições que queremos mover para a esquerda no alfabeto e string é a mensagem (texto) que queremos decifrar.
+* src/assets: contém a imagem do protótipo do projeto (fase de planejamento).
+* src/cipher.js: contém o objeto cipher, que possui dois métodos: __cipher.encode(offset, string)__: usado para codificar o texto, e __cipher.decode(offset, string)__: usado para traduzir a mensagem codificada. _Offset_ é o número de posições que queremos mover para a esquerda no alfabeto e _string_ é a mensagem (texto) que queremos decifrar.
 * src/index.html: arquivo com a marcação HTML e link para os arquivos CSS e JS.
 * src/index.js: importa o objeto cipher.js e implementa as demais funcionalidades.
-* src/prototype.png: contém o protótipo do projeto (realizado na fase de planejamento).
 * src/style.css: arquivo com a estilização.
 * test/cipher.spec.js: configuração dos testes unitários.
 
@@ -88,15 +86,11 @@ npm test
 ```
 Faça o deploy do projeto para o servidor online (gitpages):
 ```
-npm deply url
+npm run deploy
 ```
 
 ## 7. Autora
 Nathalia Monalisa Francisco: nathaliamonalisa@gmail.com
 
 ## 8. Agradecimentos
-<<<<<<< HEAD
 Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica.
-=======
-Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica.
->>>>>>> 5dde33d87e000bdedc0ca796133b832aa16420d8

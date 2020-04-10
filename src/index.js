@@ -47,8 +47,6 @@
  //Fechar mensagem de ajuda
  const CloseHelpMessage = () => document.querySelector("#help_balloon").style.opacity = 0;
 
-
-
  //Definir escutadores de evento
  document.getElementById("code").addEventListener("click", StartCoding)
  document.getElementById("decode").addEventListener("click", StartDecoding)
