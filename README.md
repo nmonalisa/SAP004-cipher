@@ -14,7 +14,7 @@
  :pushpin:  Clique [aqui](https://nmonalisa.github.io/SAP004-cipher/) para acessar o webapp.
 
 
-## 1. Prefácio
+## 1. Prefácio :paperclip:
 Cifrar significa codificar. A [cifra de
 César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
 tipos de criptografias conhecidas na história. O imperador romano Júlio César
@@ -26,13 +26,13 @@ substituida por outra que se encontra há um número fixo de posições
 ![caeser-cipher](https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png)
 
 
-## 2. Resumo
-O objetivo do projeto é construir um ambiente de criptografagem para as pistas usadas em jogos infantis do tipo ___Caça ao Tesouro___. A codificação das palavras foi baseada no método da ___Cifra de César__. A aplicação é voltada para o público infantil e se propõe a ser simples, intuitiva e lúdica. Espero que os adultos usem a página para codificar as dicas/pistas que fornecerão às crianças para que elas descubram onde está escondido o tesouro. Ao mesmo tempo, as crianças devem ser capazes de utilizar a página para decodificar as pistas que recebem dos mentores do jogo. Dessa forma, espero trazer a este jogo clássico e divertido um pouco mais de interatividade e dinamicidade através do uso de recursos virtuais.
+## 2. Resumo :mag:
+O objetivo do projeto é construir um ambiente de criptografagem para as pistas usadas em jogos infantis do tipo ___Caça ao Tesouro___. A codificação das palavras foi baseada no método da __Cifra de César__. A aplicação é voltada para o público infantil e se propõe a ser simples, intuitiva e lúdica. Espero que os adultos usem a página para codificar as dicas/pistas que fornecerão às crianças para que elas descubram onde está escondido o tesouro. Ao mesmo tempo, as crianças devem ser capazes de utilizar a página para decodificar as pistas que recebem dos mentores do jogo. Dessa forma, espero trazer a este jogo clássico e divertido um pouco mais de interatividade e dinamicidade através do uso de recursos virtuais.
 
-## 3. Funcionalidades
+## 3. Funcionalidades 	:hammer:
 A interface é composta pela área de texto, chave de deslocamento, botões de submissão de texto e um botão de ajuda. Para codificar uma pista você deverá inserir uma palavra ou frase na caixa 'Texto' e decidir quantas casas de deslocamento irá utilizar para criptografar sua pista. Registre esse número na caixa 'deslocamento'. Então use o botão 'Codificar' para gerar o texto criptografado. Para descobrir qual é o texto original, o jogador que recebe o código deve usar o botão 'Decodificar'. Não se esqueça de fornecer a chave de deslocamento original que você usou para codificação junto com a dica, pois a recuperação do texto original só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar. Clique no botão 'Ajuda' se quiser dicas de funcionamento durante o uso do webapp.
 
-## 4. Ferramentas utilizadas
+## 4. Ferramentas utilizadas :wrench:
 * [Node.js](https://nodejs.org/en/) - usado como plataforma de aplicação 
 * [NPM](https://www.npmjs.com/) - usado como gerenciador de pacotes
 * [Google Fonts](https://fonts.google.com/) - usado para estilização da fonte
@@ -69,7 +69,7 @@ A interface é composta pela área de texto, chave de deslocamento, botões de s
 * src/style.css: arquivo com a estilização dos elementos HTML.
 * test/cipher.spec.js: configuração dos testes unitários.
 
-## 6. Instalação
+## 6. Instalação :computer:
 Certifique-se de possuir o Node.js instalado:
 ```
 node -v
@@ -99,5 +99,5 @@ npm run deploy
 ## 7. Autora :email:
 Nathalia Monalisa Francisco: nathaliamonalisa@gmail.com 
 
-## 8. Agradecimentos
-Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica. :raising_hand:	:yellow_heart: 	:blue_heart:
+## 8. Agradecimentos  :raising_hand:	:yellow_heart: 	:blue_heart:
+Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica.
