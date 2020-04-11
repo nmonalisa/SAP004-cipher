@@ -8,6 +8,7 @@
 * [6. Instalação](#6-instalação)
 * [7. Autora](#7-autora)
 * [8. Agradecimentos](#8-agradecimentos)
+* [9. Créditos](#9-creditos)
 
 
  ## 0.Link do projeto
@@ -101,3 +102,7 @@ Nathalia Monalisa Francisco: nathaliamonalisa@gmail.com
 
 ## 8. Agradecimentos  :raising_hand:	:yellow_heart: 	:blue_heart:
 Colegas de #Squad5 (Luana, Marcela, Mari, Marjorie, Milena, Naere, Natasha, Nathalia) e equipe Laboratoria, em especial Palomita e Mônica.
+
+## 9. Créditos:
+* Imagem do background (navio pirata): vetor criado por brgfx - br.freepik.com
+* Imagem do botão 'Ajuda': Icon made by Freepik from www.flaticon.com"
