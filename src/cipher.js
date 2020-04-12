@@ -12,28 +12,29 @@ const cipher = {
         if (isNaN(offset) == true || string == "") {
             throw new TypeError("Os campos 'deslocamento' e 'mensagem' não podem estar vazios.");
             //offset nulo
-        } else if (offset == 0) {
+        }
+        //deslocamento nulo
+        if (offset == 0) {
             throw new TypeError("O argumento 'deslocamento' deve ser maior que 0.");
             //mensagem não é do tipo string
-        } else if (typeof string !== "string") {
-            throw new TypeError('A mensagem deve ser um texto.');
-        } else {
-            //há números como caracteres no meio da mensagem
-            for (let i = 0; i < string.length; i++) {
-                if (string.charAt(i) == "0" ||
-                    string.charAt(i) == "1" ||
-                    string.charAt(i) == "2" ||
-                    string.charAt(i) == "3" ||
-                    string.charAt(i) == "4" ||
-                    string.charAt(i) == "5" ||
-                    string.charAt(i) == "6" ||
-                    string.charAt(i) == "7" ||
-                    string.charAt(i) == "8" ||
-                    string.charAt(i) == "9") {
-                    throw new TypeError("A mensagem não pode conter números.");
-                }
+        }
+
+        //há números como caracteres no meio da mensagem
+        for (let i = 0; i < string.length; i++) {
+            if (string.charAt(i) == "0" ||
+                string.charAt(i) == "1" ||
+                string.charAt(i) == "2" ||
+                string.charAt(i) == "3" ||
+                string.charAt(i) == "4" ||
+                string.charAt(i) == "5" ||
+                string.charAt(i) == "6" ||
+                string.charAt(i) == "7" ||
+                string.charAt(i) == "8" ||
+                string.charAt(i) == "9") {
+                throw new TypeError("A mensagem não pode conter números.");
             }
         }
+
 
         //Codificação
         let encrypted_message = "";

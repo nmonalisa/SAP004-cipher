@@ -1,6 +1,6 @@
 ## Índice
 * [0. Página do projeto](#0.pagina-do-projeto)
-* [1. Prefácio](#1-prefácio)
+* [1. Contextualização](#1-contextualização)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Funcionalidades](#3-funcionalidades)
 * [4. Ferramentas utilizadas](#4-ferramentas-utilizadas)
@@ -15,7 +15,7 @@
  :pushpin:  Clique [aqui](https://nmonalisa.github.io/SAP004-cipher/) para acessar o webapp.
 
 
-## 1. Prefácio :paperclip:
+## 1. Contextualização :paperclip:
 Cifrar significa codificar. A [cifra de
 César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
 tipos de criptografias conhecidas na história. O imperador romano Júlio César
@@ -32,6 +32,7 @@ O objetivo do projeto é construir um ambiente de criptografagem para as pistas 
 
 ## 3. Funcionalidades 	:hammer:
 A interface é composta pela área de texto, chave de deslocamento, botões de submissão de texto e um botão de ajuda. Para codificar uma pista você deverá inserir uma palavra ou frase na caixa 'Texto' e decidir quantas casas de deslocamento irá utilizar para criptografar sua pista. Registre esse número na caixa 'deslocamento'. Então use o botão 'Codificar' para gerar o texto criptografado. Para descobrir qual é o texto original, o jogador que recebe o código deve usar o botão 'Decodificar'. Não se esqueça de fornecer a chave de deslocamento original que você usou para codificação junto com a dica, pois a recuperação do texto original só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar. Clique no botão 'Ajuda' se quiser dicas de funcionamento durante o uso do webapp.
+![Capa](src/capa_small.png)
 
 ## 4. Ferramentas utilizadas :wrench:
 * [Node.js](https://nodejs.org/en/) - usado como plataforma de aplicação 
