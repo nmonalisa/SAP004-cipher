@@ -28,10 +28,11 @@ substituida por outra que se encontra há um número fixo de posições
 
 
 ## 2. Resumo :mag:
-O objetivo do projeto é construir um ambiente de criptografagem para mensagens usadas como pistas em jogos infantis do tipo ___Caça ao Tesouro___. A codificação das palavras foi baseada no método da __Cifra de César__. A aplicação é voltada para o público infantil e se propõe a ser simples, intuitiva e lúdica. Espero que os adultos usem a página para codificar as dicas/pistas que fornecerão às crianças para que elas descubram onde está escondido o tesouro. Ao mesmo tempo, espero que as crianças sejam capazes de utilizar a página para decodificar as pistas que recebem dos mentores do jogo. A ideia é trazer aum jogo clássico e divertido um pouco mais de interatividade e dinamicidade através do uso de recursos virtuais.
+O objetivo do projeto é construir um ambiente de criptografagem para mensagens usadas como pistas em jogos infantis do tipo ___Caça ao Tesouro___. A codificação das palavras foi baseada no método da __Cifra de César__. A aplicação é voltada para o público infantil e se propõe a ser simples, intuitiva e lúdica. Espero que os adultos usem a página para codificar as dicas/pistas que fornecerão às crianças para que elas descubram onde está escondido o tesouro. Ao mesmo tempo, espero que as crianças sejam capazes de utilizar a página para decodificar as pistas que recebem dos mentores do jogo. A ideia é trazer um pouco mais de interatividade e diversão a um jogo clássico através do uso de recursos virtuais.
 
 ## 3. Funcionalidades 	:hammer:
-A interface é composta pela área de texto, chave de deslocamento, botões de submissão de texto e botão 'Ajuda'. Para codificar uma pista,o usuário deverá inserir uma mensagem na caixa 'Texto' e registrar quantas casas de deslocamento irá utilizar para a criptografagem. Então deverá utilizar o botão 'Codificar' para gerar o texto criptografado. Para descobrir qual é o texto original, o usuário que recebe a pista codificada deve usar o botão 'Decodificar'. A pessoa que fornece a pista não deve se esquecer de fornecer também a chave de deslocamento usada na codificação, pois a tradução só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar o texto. O botão 'Ajuda' fornece dicas básicas de uso da aplicação. Veja uma imagem da interface do usuário abaixo:<br>
+A interface é composta pelas __área de texto__, __chave de deslocamento__, __botões de submissão de texto (Codificar/Decodificar)__ e __botão Ajuda__. Para criptografar uma pista o usuário deve inserir sua mensagem na caixa 'Texto' e, após registrar quantas casas de deslocamento deseja, usar o botão Codificar. O usuário que recebe a pista codificada deve usar o botão 'Decodificar' para recuperar a mensagem original. Quem fornece a pista não deve se esquecer de fornecer também a chave de deslocamento usada na codificação, pois a tradução só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar o texto. O botão 'Ajuda' fornece dicas básicas de uso da aplicação.<br>
+Veja a imagem da interface do usuário abaixo:<br>
 ![Capa](src/assets/capa_small.png)
 
 ## 4. Ferramentas utilizadas :wrench:
@@ -77,7 +78,7 @@ Instale as dependências (listadas no arquivo package.json) do projeto no seu di
 ```
 npm install
 ```
-Inicialize a aplicação (index.html) no seu servidor local (localhost):
+Inicialize a aplicação (index.html) no seu servidor local:
 ```
 npm start
 ```
