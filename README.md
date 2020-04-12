@@ -32,7 +32,7 @@ O objetivo do projeto é construir um ambiente de criptografagem para as pistas 
 
 ## 3. Funcionalidades 	:hammer:
 A interface é composta pela área de texto, chave de deslocamento, botões de submissão de texto e um botão de ajuda. Para codificar uma pista você deverá inserir uma palavra ou frase na caixa 'Texto' e decidir quantas casas de deslocamento irá utilizar para criptografar sua pista. Registre esse número na caixa 'deslocamento'. Então use o botão 'Codificar' para gerar o texto criptografado. Para descobrir qual é o texto original, o jogador que recebe o código deve usar o botão 'Decodificar'. Não se esqueça de fornecer a chave de deslocamento original que você usou para codificação junto com a dica, pois a recuperação do texto original só será precisa se o mesmo deslocamento for utilizado para codificar e decodificar. Clique no botão 'Ajuda' se quiser dicas de funcionamento durante o uso do webapp.
-![Capa](src/capa_small.png)
+<div align="center"> ![Capa](src/assets/capa_small.png)</div>
 
 ## 4. Ferramentas utilizadas :wrench:
 * [Node.js](https://nodejs.org/en/) - usado como plataforma de aplicação 
@@ -63,7 +63,7 @@ A interface é composta pela área de texto, chave de deslocamento, botões de s
 * src/index.html: arquivo com a marcação HTML e link para os arquivos CSS e JS.
 * src/index.js: importa o objeto cipher.js e implementa as demais funcionalidades.
 * src/style.css: arquivo com a estilização.
-* src/assets: contém o protótipo, feito na fase de planejamento.
+* src/assets: contém o protótipo e as imagens de capa.
 * src/cipher.js: contém o objeto cipher, que possui dois métodos: __cipher.encode(offset, string)__: usado para codificar a mensagem, e __cipher.decode(offset, string)__: usado para traduzir a mensagem codificada (decodificar). _Offset_ é o número de posições mividas para a direita no alfabeto e _string_ é a mensagem que deverá ser cifrada/decifrada.
 * src/index.html: arquivo com a marcação HTML e link para os arquivos CSS e JS.
 * src/index.js: importa o objeto cipher.js e implementa as demais funcionalidades em JS.
